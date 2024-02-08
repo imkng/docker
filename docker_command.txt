@@ -1,0 +1,42 @@
+1. check docker version
+ docker -v
+
+2.pull img from docker hub
+    docker pull [image_name]
+
+3. Docker images
+    docker images
+4. Search image
+    docker search [image_name]
+
+Run Image
+    docker run -d <image_name>
+
+    Run in interactive ways
+    docker run --name "pythonContainer1" -it -d python
+
+
+    to see running container
+    docker ps
+
+TOGO inside container
+    docker exec -it [container_id] [container_command]
+
+    to get all info of container
+        docker inspect [container_id]
+
+
+/exit
+
+
+Stop container
+docker stop container_id
+
+
+=========================================================================
+
+To Build Docker file:
+
+1. Goto Dockerfile
+2. in cmd:- docker build -t myjavaimage . // will create image
+3. to run image:- docker run --name javaproject myjavaimage
